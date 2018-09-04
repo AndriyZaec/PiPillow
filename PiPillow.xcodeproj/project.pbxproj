@@ -35,11 +35,6 @@
 		49745DEB20E772BD0052EED2 /* Sea_shore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DE620E772BD0052EED2 /* Sea_shore.mp3 */; };
 		49745DEC20E772BD0052EED2 /* Morning_rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DE720E772BD0052EED2 /* Morning_rain.mp3 */; };
 		49745DF120E7B75B0052EED2 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49745DF020E7B75B0052EED2 /* AudioController.swift */; };
-		49745DF720E7CC080052EED2 /* Sea_shore.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DF220E7CC080052EED2 /* Sea_shore.mp4 */; };
-		49745DF820E7CC080052EED2 /* Train_sound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DF320E7CC080052EED2 /* Train_sound.mp4 */; };
-		49745DF920E7CC080052EED2 /* Mountain_peak.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DF420E7CC080052EED2 /* Mountain_peak.mp4 */; };
-		49745DFA20E7CC080052EED2 /* Morning_rain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DF520E7CC080052EED2 /* Morning_rain.mp4 */; };
-		49745DFB20E7CC080052EED2 /* Night_sound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DF620E7CC080052EED2 /* Night_sound.mp4 */; };
 		49745DFD20E7CF5A0052EED2 /* GoodNightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49745DFC20E7CF5A0052EED2 /* GoodNightViewController.swift */; };
 		49745E0020E7DFDD0052EED2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49745DFF20E7DFDD0052EED2 /* AudioToolbox.framework */; };
 		49745E0220E7E3B60052EED2 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49745E0120E7E3B60052EED2 /* StatisticViewController.swift */; };
@@ -123,11 +118,6 @@
 		49745DE620E772BD0052EED2 /* Sea_shore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sea_shore.mp3; sourceTree = "<group>"; };
 		49745DE720E772BD0052EED2 /* Morning_rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Morning_rain.mp3; sourceTree = "<group>"; };
 		49745DF020E7B75B0052EED2 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
-		49745DF220E7CC080052EED2 /* Sea_shore.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sea_shore.mp4; sourceTree = "<group>"; };
-		49745DF320E7CC080052EED2 /* Train_sound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Train_sound.mp4; sourceTree = "<group>"; };
-		49745DF420E7CC080052EED2 /* Mountain_peak.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mountain_peak.mp4; sourceTree = "<group>"; };
-		49745DF520E7CC080052EED2 /* Morning_rain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Morning_rain.mp4; sourceTree = "<group>"; };
-		49745DF620E7CC080052EED2 /* Night_sound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Night_sound.mp4; sourceTree = "<group>"; };
 		49745DFC20E7CF5A0052EED2 /* GoodNightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNightViewController.swift; sourceTree = "<group>"; };
 		49745DFE20E7DFDD0052EED2 /* PiPillow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PiPillow.entitlements; sourceTree = "<group>"; };
 		49745DFF20E7DFDD0052EED2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -319,11 +309,6 @@
 		49745DEE20E772CD0052EED2 /* videos */ = {
 			isa = PBXGroup;
 			children = (
-				49745DF520E7CC080052EED2 /* Morning_rain.mp4 */,
-				49745DF420E7CC080052EED2 /* Mountain_peak.mp4 */,
-				49745DF620E7CC080052EED2 /* Night_sound.mp4 */,
-				49745DF220E7CC080052EED2 /* Sea_shore.mp4 */,
-				49745DF320E7CC080052EED2 /* Train_sound.mp4 */,
 			);
 			path = videos;
 			sourceTree = "<group>";
@@ -531,27 +516,22 @@
 				4934B88320193815009CEBE9 /* OpenSans-Light.ttf in Resources */,
 				49762EF220AB7272005C86A1 /* AlarmViewCollectionViewCell.xib in Resources */,
 				4934B85920191C6A009CEBE9 /* LaunchScreen.storyboard in Resources */,
-				49745DF820E7CC080052EED2 /* Train_sound.mp4 in Resources */,
 				4934B88A20193C10009CEBE9 /* Roboto-Bold.ttf in Resources */,
 				49762EF620AD76D7005C86A1 /* EasyWakeCollectionViewCell.xib in Resources */,
 				49745DEB20E772BD0052EED2 /* Sea_shore.mp3 in Resources */,
 				49745DEA20E772BD0052EED2 /* Night_sound.mp3 in Resources */,
 				49745E0620E7EE520052EED2 /* NightStatisticCollectionViewCell.xib in Resources */,
 				49745DEC20E772BD0052EED2 /* Morning_rain.mp3 in Resources */,
-				49745DF920E7CC080052EED2 /* Mountain_peak.mp4 in Resources */,
 				49745DE820E772BD0052EED2 /* Train_sounds.mp3 in Resources */,
 				4934B85620191C6A009CEBE9 /* Assets.xcassets in Resources */,
 				4934B88120193815009CEBE9 /* OpenSans-Regular.ttf in Resources */,
 				4934B88220193815009CEBE9 /* OpenSans-Italic.ttf in Resources */,
 				49745DE920E772BD0052EED2 /* Mountain_peak.mp3 in Resources */,
 				4934B88420193815009CEBE9 /* OpenSans-Semibold.ttf in Resources */,
-				49745DFB20E7CC080052EED2 /* Night_sound.mp4 in Resources */,
 				4934B88920193C10009CEBE9 /* Roboto-Regular.ttf in Resources */,
 				49AD6A9A20B244F200AE745E /* SonataCollectionViewCell.xib in Resources */,
 				4934B88820193C10009CEBE9 /* Roboto-Light.ttf in Resources */,
-				49745DF720E7CC080052EED2 /* Sea_shore.mp4 in Resources */,
 				4934B85420191C6A009CEBE9 /* Main.storyboard in Resources */,
-				49745DFA20E7CC080052EED2 /* Morning_rain.mp4 in Resources */,
 				49AD6A9620B22D9A00AE745E /* StarSoundCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
