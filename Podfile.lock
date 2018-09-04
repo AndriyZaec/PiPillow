@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.6.0)
+  - IQKeyboardManagerSwift (5.0.4)
+  - KeychainAccess (3.1.0)
+  - Moya (11.0.1):
+    - Moya/Core (= 11.0.1)
+  - Moya/Core (11.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - NHRangeSlider (0.2)
+  - Result (3.2.4)
+  - UICircularProgressRing (2.1.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - KeychainAccess
+  - Moya (~> 11.0)
+  - NHRangeSlider (~> 0.2)
+  - UICircularProgressRing
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - Moya
+    - NHRangeSlider
+    - Result
+    - UICircularProgressRing
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  IQKeyboardManagerSwift: a0592bb636b10a9a1cf75d2b2c61144226226c84
+  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
+  NHRangeSlider: 2ef13d34bd7d48fcdedcde71c018c093992add7d
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  UICircularProgressRing: 01b8f67bbaca7e3a83ccfa67630fe059a51211d1
+
+PODFILE CHECKSUM: 6e9256fc3ed7bf38a661ecde7a2f9c179b6a6e9e
+
+COCOAPODS: 1.5.0

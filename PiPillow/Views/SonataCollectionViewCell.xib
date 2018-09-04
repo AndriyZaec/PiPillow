@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SonataCollectionViewCell" id="gTV-IL-0wX" customClass="SonataCollectionViewCell" customModule="PiPillow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="287" height="367"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="367"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6H-vf-j4z">
+                        <rect key="frame" x="0.0" y="0.0" width="287" height="367"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sonata icon" translatesAutoresizingMaskIntoConstraints="NO" id="brI-Wm-fHu">
+                                <rect key="frame" x="15" y="15" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7VH-97-IIm"/>
+                                    <constraint firstAttribute="height" constant="60" id="GF4-BE-Kh0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Sonata" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zQ-a9-3x1">
+                                <rect key="frame" x="90" y="13" width="182" height="26"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let us know if you want to listen music " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="x6s-Bv-1CX">
+                                <rect key="frame" x="90" y="39" width="182" height="36"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH4-Ib-tI4">
+                                <rect key="frame" x="15" y="317" width="118.5" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CzV-YG-zur">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Skip"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="skipDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="WRx-kf-rG4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6t-Eg-Bm5">
+                                <rect key="frame" x="153.5" y="317" width="118.5" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yOH-DO-LmE">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="0Jh-FR-wcn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOx-l8-56v">
+                                <rect key="frame" x="30" y="90" width="227" height="107"/>
+                                <string key="text">Sonata technology allows you to listen to music and audiobooks while you are falling asleep.  You can use any music/video application on your smartphone. The music will autimatically turn off after you fall asleep. Or you can set time by yourself.</string>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGu-v8-plx" customClass="PRGRoundSlider" customModule="PiPillow" customModuleProvider="target">
+                                <rect key="frame" x="15" y="212" width="257" height="105"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.34509803919999998" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="innerStrokeColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startValue">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endValue">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startEndColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="startText" value="Sonata"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549020000001" green="0.34509803919999998" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x6s-Bv-1CX" firstAttribute="trailing" secondItem="1zQ-a9-3x1" secondAttribute="trailing" id="2fX-x7-D1c"/>
+                            <constraint firstItem="BGu-v8-plx" firstAttribute="leading" secondItem="EH4-Ib-tI4" secondAttribute="leading" id="4cL-UY-CyS"/>
+                            <constraint firstItem="x6s-Bv-1CX" firstAttribute="leading" secondItem="1zQ-a9-3x1" secondAttribute="leading" id="6Vn-fm-eES"/>
+                            <constraint firstItem="h6t-Eg-Bm5" firstAttribute="width" secondItem="EH4-Ib-tI4" secondAttribute="width" id="6Vt-TB-j93"/>
+                            <constraint firstItem="EH4-Ib-tI4" firstAttribute="leading" secondItem="Z6H-vf-j4z" secondAttribute="leading" constant="15" id="6ZG-vw-RQE"/>
+                            <constraint firstItem="brI-Wm-fHu" firstAttribute="top" secondItem="Z6H-vf-j4z" secondAttribute="top" constant="15" id="8Mt-Pd-Vuo"/>
+                            <constraint firstItem="x6s-Bv-1CX" firstAttribute="leading" secondItem="1zQ-a9-3x1" secondAttribute="leading" id="9cS-Vb-fLB"/>
+                            <constraint firstItem="x6s-Bv-1CX" firstAttribute="top" secondItem="1zQ-a9-3x1" secondAttribute="bottom" id="ADv-xZ-pSs"/>
+                            <constraint firstItem="x6s-Bv-1CX" firstAttribute="top" secondItem="1zQ-a9-3x1" secondAttribute="bottom" id="B0P-bO-BF2"/>
+                            <constraint firstItem="x6s-Bv-1CX" firstAttribute="bottom" secondItem="brI-Wm-fHu" secondAttribute="bottom" id="B2r-yM-1sn"/>
+                            <constraint firstItem="BGu-v8-plx" firstAttribute="top" secondItem="wOx-l8-56v" secondAttribute="bottom" constant="15" id="B5s-lT-xJW"/>
+                            <constraint firstAttribute="bottom" secondItem="h6t-Eg-Bm5" secondAttribute="bottom" constant="20" id="DAY-vY-QM1"/>
+                            <constraint firstItem="1zQ-a9-3x1" firstAttribute="leading" secondItem="brI-Wm-fHu" secondAttribute="trailing" constant="15" id="Kj8-Zc-fzw"/>
+                            <constraint firstAttribute="trailing" secondItem="wOx-l8-56v" secondAttribute="trailing" constant="30" id="P3i-Jy-Rec"/>
+                            <constraint firstItem="EH4-Ib-tI4" firstAttribute="top" secondItem="BGu-v8-plx" secondAttribute="bottom" id="Paz-eG-lSX"/>
+                            <constraint firstAttribute="trailing" secondItem="h6t-Eg-Bm5" secondAttribute="trailing" constant="15" id="Vlx-Zu-nrg"/>
+                            <constraint firstItem="1zQ-a9-3x1" firstAttribute="top" secondItem="Z6H-vf-j4z" secondAttribute="top" constant="13" id="VoQ-9w-2aP"/>
+                            <constraint firstItem="BGu-v8-plx" firstAttribute="trailing" secondItem="x6s-Bv-1CX" secondAttribute="trailing" id="b4J-iA-9qi"/>
+                            <constraint firstItem="h6t-Eg-Bm5" firstAttribute="leading" secondItem="EH4-Ib-tI4" secondAttribute="trailing" constant="20" id="b5v-4O-eXK"/>
+                            <constraint firstItem="brI-Wm-fHu" firstAttribute="leading" secondItem="Z6H-vf-j4z" secondAttribute="leading" constant="15" id="cro-Kh-Ljl"/>
+                            <constraint firstItem="wOx-l8-56v" firstAttribute="top" secondItem="brI-Wm-fHu" secondAttribute="bottom" constant="15" id="d0M-rZ-asw"/>
+                            <constraint firstItem="x6s-Bv-1CX" firstAttribute="trailing" secondItem="1zQ-a9-3x1" secondAttribute="trailing" id="dxu-oC-CUt"/>
+                            <constraint firstAttribute="bottom" secondItem="EH4-Ib-tI4" secondAttribute="bottom" constant="20" id="kh6-hQ-JUU"/>
+                            <constraint firstAttribute="trailing" secondItem="1zQ-a9-3x1" secondAttribute="trailing" constant="15" id="nwr-VZ-t4L"/>
+                            <constraint firstItem="wOx-l8-56v" firstAttribute="leading" secondItem="Z6H-vf-j4z" secondAttribute="leading" constant="30" id="sor-eE-zcV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Z6H-vf-j4z" secondAttribute="trailing" id="Bmk-jf-JLk"/>
+                <constraint firstAttribute="bottom" secondItem="Z6H-vf-j4z" secondAttribute="bottom" id="Sbj-SV-Xzu"/>
+                <constraint firstItem="Z6H-vf-j4z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vgh-Ma-aym"/>
+                <constraint firstItem="Z6H-vf-j4z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wiS-FF-TXW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="containerView" destination="Z6H-vf-j4z" id="Zs3-h6-3ZA"/>
+                <outlet property="nextButton" destination="h6t-Eg-Bm5" id="Sm1-5y-Wn4"/>
+                <outlet property="skipButton" destination="EH4-Ib-tI4" id="iWR-8m-YyL"/>
+                <outlet property="sonataSlider" destination="BGu-v8-plx" id="wa7-Th-5Ny"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Sonata icon" width="56" height="56"/>
+    </resources>
+</document>

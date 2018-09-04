@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EasyWakeCollectionViewCell" id="gTV-IL-0wX" customClass="EasyWakeCollectionViewCell" customModule="PiPillow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PtG-f3-ugB">
+                        <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EasyWake icon" translatesAutoresizingMaskIntoConstraints="NO" id="6Ji-Bh-J7Z">
+                                <rect key="frame" x="15" y="15" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bdb-9q-g4n"/>
+                                    <constraint firstAttribute="width" constant="60" id="jim-LG-EeP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="EasyWake" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSW-bK-Roy">
+                                <rect key="frame" x="90" y="13" width="177" height="26"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let us know if you want to use EasyWake technology" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5ru-HW-wHO">
+                                <rect key="frame" x="90" y="39" width="177" height="36"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huX-9I-jIw">
+                                <rect key="frame" x="15" y="317" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jev-3T-ypT">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Skip"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="skipDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="yrb-lP-OK8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8I-Qt-uo3">
+                                <rect key="frame" x="151" y="317" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OP0-J4-Etc">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="JxN-Am-h76"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXM-eH-8Sh">
+                                <rect key="frame" x="30" y="105" width="222" height="82.5"/>
+                                <string key="text">EasyWake technology finds the perfect time to wake up naturally, during the short phase of sleep. Just set the time period in which you want to be woken up.</string>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSF-GE-TPH" customClass="PRGRoundRangeSlider" customModule="PiPillow" customModuleProvider="target">
+                                <rect key="frame" x="21" y="202.5" width="240" height="114.5"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.34509803919999998" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor">
+                                        <color key="value" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbColor">
+                                        <color key="value" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="innerStrokeColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="messageColor">
+                                        <color key="value" red="1" green="0.3631132957" blue="0.43551972300000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startValue">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endValue">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="startText" value="7.21"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startEndColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="endText" value="9.21"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549020000001" green="0.34509803919999998" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X8I-Qt-uo3" firstAttribute="width" secondItem="huX-9I-jIw" secondAttribute="width" id="2bx-Kb-Kc3"/>
+                            <constraint firstItem="xSW-bK-Roy" firstAttribute="leading" secondItem="6Ji-Bh-J7Z" secondAttribute="trailing" constant="15" id="2xK-QD-HeI"/>
+                            <constraint firstItem="5ru-HW-wHO" firstAttribute="top" secondItem="xSW-bK-Roy" secondAttribute="bottom" id="73G-ZB-aKi"/>
+                            <constraint firstItem="FXM-eH-8Sh" firstAttribute="leading" secondItem="PtG-f3-ugB" secondAttribute="leading" constant="30" id="AZp-KJ-xLD"/>
+                            <constraint firstAttribute="trailing" secondItem="CSF-GE-TPH" secondAttribute="trailing" constant="21" id="BiY-R0-tFY"/>
+                            <constraint firstItem="huX-9I-jIw" firstAttribute="leading" secondItem="PtG-f3-ugB" secondAttribute="leading" constant="15" id="DAr-o6-JBt"/>
+                            <constraint firstItem="CSF-GE-TPH" firstAttribute="top" secondItem="FXM-eH-8Sh" secondAttribute="bottom" constant="15" id="E84-AO-bfG"/>
+                            <constraint firstItem="5ru-HW-wHO" firstAttribute="trailing" secondItem="xSW-bK-Roy" secondAttribute="trailing" id="Lj4-QE-8KR"/>
+                            <constraint firstAttribute="bottom" secondItem="X8I-Qt-uo3" secondAttribute="bottom" constant="20" id="NWV-eS-h3d"/>
+                            <constraint firstItem="6Ji-Bh-J7Z" firstAttribute="leading" secondItem="PtG-f3-ugB" secondAttribute="leading" constant="15" id="PLb-cf-bo4"/>
+                            <constraint firstItem="5ru-HW-wHO" firstAttribute="leading" secondItem="xSW-bK-Roy" secondAttribute="leading" id="Qbt-2Y-EuF"/>
+                            <constraint firstAttribute="bottom" secondItem="huX-9I-jIw" secondAttribute="bottom" constant="20" id="W1G-5G-yCj"/>
+                            <constraint firstItem="5ru-HW-wHO" firstAttribute="top" secondItem="xSW-bK-Roy" secondAttribute="bottom" id="Xak-h2-FSh"/>
+                            <constraint firstItem="5ru-HW-wHO" firstAttribute="bottom" secondItem="6Ji-Bh-J7Z" secondAttribute="bottom" id="aXC-Yf-0GC"/>
+                            <constraint firstItem="FXM-eH-8Sh" firstAttribute="top" secondItem="6Ji-Bh-J7Z" secondAttribute="bottom" constant="30" id="cKW-o4-5Ma"/>
+                            <constraint firstItem="CSF-GE-TPH" firstAttribute="leading" secondItem="PtG-f3-ugB" secondAttribute="leading" constant="21" id="eNP-he-iJk"/>
+                            <constraint firstItem="5ru-HW-wHO" firstAttribute="trailing" secondItem="xSW-bK-Roy" secondAttribute="trailing" id="er2-uH-wr8"/>
+                            <constraint firstItem="5ru-HW-wHO" firstAttribute="leading" secondItem="xSW-bK-Roy" secondAttribute="leading" id="ff2-jT-6VB"/>
+                            <constraint firstItem="6Ji-Bh-J7Z" firstAttribute="top" secondItem="PtG-f3-ugB" secondAttribute="top" constant="15" id="hwG-tJ-wwg"/>
+                            <constraint firstItem="X8I-Qt-uo3" firstAttribute="leading" secondItem="huX-9I-jIw" secondAttribute="trailing" constant="20" id="ls8-Ka-Ivy"/>
+                            <constraint firstAttribute="trailing" secondItem="xSW-bK-Roy" secondAttribute="trailing" constant="15" id="mfj-l9-E6l"/>
+                            <constraint firstItem="xSW-bK-Roy" firstAttribute="top" secondItem="PtG-f3-ugB" secondAttribute="top" constant="13" id="oPb-O3-tXA"/>
+                            <constraint firstItem="huX-9I-jIw" firstAttribute="top" secondItem="CSF-GE-TPH" secondAttribute="bottom" id="uA9-n4-9hw"/>
+                            <constraint firstAttribute="trailing" secondItem="FXM-eH-8Sh" secondAttribute="trailing" constant="30" id="x0v-Jj-VcE"/>
+                            <constraint firstAttribute="trailing" secondItem="X8I-Qt-uo3" secondAttribute="trailing" constant="15" id="yHd-KD-9wH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PtG-f3-ugB" secondAttribute="trailing" id="9VA-B5-ocW"/>
+                <constraint firstAttribute="bottom" secondItem="PtG-f3-ugB" secondAttribute="bottom" id="C3G-gI-sHj"/>
+                <constraint firstItem="PtG-f3-ugB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IGj-B2-dmn"/>
+                <constraint firstItem="PtG-f3-ugB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vNC-OW-A2B"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="282" height="364"/>
+            <connections>
+                <outlet property="containerView" destination="PtG-f3-ugB" id="H1y-c2-IES"/>
+                <outlet property="easyWakeRangeSlider" destination="CSF-GE-TPH" id="OM3-zb-6Tt"/>
+                <outlet property="nextButton" destination="X8I-Qt-uo3" id="ZkR-ia-dSl"/>
+                <outlet property="skipButton" destination="huX-9I-jIw" id="t6V-wT-do0"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="208.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="EasyWake icon" width="56" height="56"/>
+    </resources>
+</document>

@@ -1,0 +1,1008 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		490B11BF20BEB8B6005065E7 /* StarSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B11BE20BEB8B6005065E7 /* StarSoundViewController.swift */; };
+		490B11C120BEBA06005065E7 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B11C020BEBA06005065E7 /* VideoView.swift */; };
+		492B6B56202A6B72008BA698 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B6B55202A6B72008BA698 /* CustomPageControl.swift */; };
+		4934B84F20191C6A009CEBE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934B84E20191C6A009CEBE9 /* AppDelegate.swift */; };
+		4934B85420191C6A009CEBE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4934B85220191C6A009CEBE9 /* Main.storyboard */; };
+		4934B85620191C6A009CEBE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4934B85520191C6A009CEBE9 /* Assets.xcassets */; };
+		4934B85920191C6A009CEBE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4934B85720191C6A009CEBE9 /* LaunchScreen.storyboard */; };
+		4934B86420191C6A009CEBE9 /* PiPillowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934B86320191C6A009CEBE9 /* PiPillowTests.swift */; };
+		4934B86F20191C6A009CEBE9 /* PiPillowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934B86E20191C6A009CEBE9 /* PiPillowUITests.swift */; };
+		4934B88120193815009CEBE9 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4934B87D20193814009CEBE9 /* OpenSans-Regular.ttf */; };
+		4934B88220193815009CEBE9 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4934B87E20193815009CEBE9 /* OpenSans-Italic.ttf */; };
+		4934B88320193815009CEBE9 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4934B87F20193815009CEBE9 /* OpenSans-Light.ttf */; };
+		4934B88420193815009CEBE9 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4934B88020193815009CEBE9 /* OpenSans-Semibold.ttf */; };
+		4934B88820193C10009CEBE9 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4934B88520193C10009CEBE9 /* Roboto-Light.ttf */; };
+		4934B88920193C10009CEBE9 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4934B88620193C10009CEBE9 /* Roboto-Regular.ttf */; };
+		4934B88A20193C10009CEBE9 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4934B88720193C10009CEBE9 /* Roboto-Bold.ttf */; };
+		4940379C2024E48100F9B23C /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940379B2024E48100F9B23C /* UnderlineTextField.swift */; };
+		495E214020812310001B85BD /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E213F20812310001B85BD /* UserInfoViewController.swift */; };
+		4964DF67201E63B600D2763F /* GenDefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964DF66201E63B600D2763F /* GenDefs.swift */; };
+		4964DF69201E63D500D2763F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964DF68201E63D500D2763F /* OnBoardingViewController.swift */; };
+		4964DF6B201E693A00D2763F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964DF6A201E693A00D2763F /* LogInViewController.swift */; };
+		4964DF6D201E6CDC00D2763F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964DF6C201E6CDC00D2763F /* Extensions.swift */; };
+		49745DE820E772BD0052EED2 /* Train_sounds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DE320E772BD0052EED2 /* Train_sounds.mp3 */; };
+		49745DE920E772BD0052EED2 /* Mountain_peak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DE420E772BD0052EED2 /* Mountain_peak.mp3 */; };
+		49745DEA20E772BD0052EED2 /* Night_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DE520E772BD0052EED2 /* Night_sound.mp3 */; };
+		49745DEB20E772BD0052EED2 /* Sea_shore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DE620E772BD0052EED2 /* Sea_shore.mp3 */; };
+		49745DEC20E772BD0052EED2 /* Morning_rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DE720E772BD0052EED2 /* Morning_rain.mp3 */; };
+		49745DF120E7B75B0052EED2 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49745DF020E7B75B0052EED2 /* AudioController.swift */; };
+		49745DF720E7CC080052EED2 /* Sea_shore.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DF220E7CC080052EED2 /* Sea_shore.mp4 */; };
+		49745DF820E7CC080052EED2 /* Train_sound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DF320E7CC080052EED2 /* Train_sound.mp4 */; };
+		49745DF920E7CC080052EED2 /* Mountain_peak.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DF420E7CC080052EED2 /* Mountain_peak.mp4 */; };
+		49745DFA20E7CC080052EED2 /* Morning_rain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DF520E7CC080052EED2 /* Morning_rain.mp4 */; };
+		49745DFB20E7CC080052EED2 /* Night_sound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49745DF620E7CC080052EED2 /* Night_sound.mp4 */; };
+		49745DFD20E7CF5A0052EED2 /* GoodNightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49745DFC20E7CF5A0052EED2 /* GoodNightViewController.swift */; };
+		49745E0020E7DFDD0052EED2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49745DFF20E7DFDD0052EED2 /* AudioToolbox.framework */; };
+		49745E0220E7E3B60052EED2 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49745E0120E7E3B60052EED2 /* StatisticViewController.swift */; };
+		49745E0520E7EE520052EED2 /* NightStatisticCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49745E0320E7EE520052EED2 /* NightStatisticCollectionViewCell.swift */; };
+		49745E0620E7EE520052EED2 /* NightStatisticCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49745E0420E7EE520052EED2 /* NightStatisticCollectionViewCell.xib */; };
+		49762EEC20A9B722005C86A1 /* PiTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49762EEB20A9B722005C86A1 /* PiTabBarController.swift */; };
+		49762EEE20AB67AD005C86A1 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49762EED20AB67AD005C86A1 /* SleepViewController.swift */; };
+		49762EF120AB7272005C86A1 /* AlarmViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49762EEF20AB7272005C86A1 /* AlarmViewCollectionViewCell.swift */; };
+		49762EF220AB7272005C86A1 /* AlarmViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49762EF020AB7272005C86A1 /* AlarmViewCollectionViewCell.xib */; };
+		49762EF520AD76D7005C86A1 /* EasyWakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49762EF320AD76D7005C86A1 /* EasyWakeCollectionViewCell.swift */; };
+		49762EF620AD76D7005C86A1 /* EasyWakeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49762EF420AD76D7005C86A1 /* EasyWakeCollectionViewCell.xib */; };
+		49762EFB20AD80C3005C86A1 /* PRGRoundRangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49762EF820AD80C2005C86A1 /* PRGRoundRangeSlider.swift */; };
+		49762EFC20AD80C3005C86A1 /* PRGRoundSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49762EF920AD80C3005C86A1 /* PRGRoundSlider.swift */; };
+		49762EFD20AD80C3005C86A1 /* SliderKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49762EFA20AD80C3005C86A1 /* SliderKit.swift */; };
+		497AE2CD2048AE00006B89BB /* PiPillowAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497AE2CC2048AE00006B89BB /* PiPillowAPIService.swift */; };
+		497AE2CF2048BBD4006B89BB /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497AE2CE2048BBD4006B89BB /* CustomActivityIndicator.swift */; };
+		4993101A2027559F0086DE11 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499310192027559F0086DE11 /* RegistrationViewController.swift */; };
+		4993101C20275B540086DE11 /* PairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993101B20275B540086DE11 /* PairingViewController.swift */; };
+		49AD6A9520B22D9A00AE745E /* StarSoundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6A9320B22D9A00AE745E /* StarSoundCollectionViewCell.swift */; };
+		49AD6A9620B22D9A00AE745E /* StarSoundCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6A9420B22D9A00AE745E /* StarSoundCollectionViewCell.xib */; };
+		49AD6A9920B244F200AE745E /* SonataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6A9720B244F200AE745E /* SonataCollectionViewCell.swift */; };
+		49AD6A9A20B244F200AE745E /* SonataCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6A9820B244F200AE745E /* SonataCollectionViewCell.xib */; };
+		49AD6A9D20B25CAF00AE745E /* SleepCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6A9C20B25CAF00AE745E /* SleepCollectionViewCellDelegate.swift */; };
+		49AD6A9F20B2611300AE745E /* BaseSleepCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6A9E20B2611300AE745E /* BaseSleepCollectionViewCell.swift */; };
+		49FBD4D22048D93F005CBAFE /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FBD4D12048D93F005CBAFE /* ResponseModels.swift */; };
+		F330C032CA50A4251B88D0D0 /* Pods_PiPillowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146AD9324FC2FDADC72A5788 /* Pods_PiPillowTests.framework */; };
+		F4EBD8DCE44ACC16A6514AA7 /* Pods_PiPillowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0ACA0402CE4A74AC15A6B9 /* Pods_PiPillowUITests.framework */; };
+		F50CE29018CD4269A67ED103 /* Pods_PiPillow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F09553A0702353E3A8BEB1 /* Pods_PiPillow.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4934B86020191C6A009CEBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4934B84320191C6A009CEBE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4934B84A20191C6A009CEBE9;
+			remoteInfo = PiPillow;
+		};
+		4934B86B20191C6A009CEBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4934B84320191C6A009CEBE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4934B84A20191C6A009CEBE9;
+			remoteInfo = PiPillow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		146AD9324FC2FDADC72A5788 /* Pods_PiPillowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiPillowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		490B11BE20BEB8B6005065E7 /* StarSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSoundViewController.swift; sourceTree = "<group>"; };
+		490B11C020BEBA06005065E7 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		492B6B55202A6B72008BA698 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
+		4934B84B20191C6A009CEBE9 /* PiPillow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiPillow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4934B84E20191C6A009CEBE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4934B85320191C6A009CEBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4934B85520191C6A009CEBE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4934B85820191C6A009CEBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4934B85A20191C6A009CEBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4934B85F20191C6A009CEBE9 /* PiPillowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiPillowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4934B86320191C6A009CEBE9 /* PiPillowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPillowTests.swift; sourceTree = "<group>"; };
+		4934B86520191C6A009CEBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4934B86A20191C6A009CEBE9 /* PiPillowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiPillowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4934B86E20191C6A009CEBE9 /* PiPillowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPillowUITests.swift; sourceTree = "<group>"; };
+		4934B87020191C6A009CEBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4934B87D20193814009CEBE9 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		4934B87E20193815009CEBE9 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		4934B87F20193815009CEBE9 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		4934B88020193815009CEBE9 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		4934B88520193C10009CEBE9 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		4934B88620193C10009CEBE9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4934B88720193C10009CEBE9 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		4940379B2024E48100F9B23C /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		495E213F20812310001B85BD /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		4964DF66201E63B600D2763F /* GenDefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenDefs.swift; sourceTree = "<group>"; };
+		4964DF68201E63D500D2763F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		4964DF6A201E693A00D2763F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		4964DF6C201E6CDC00D2763F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		49745DE320E772BD0052EED2 /* Train_sounds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Train_sounds.mp3; sourceTree = "<group>"; };
+		49745DE420E772BD0052EED2 /* Mountain_peak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mountain_peak.mp3; sourceTree = "<group>"; };
+		49745DE520E772BD0052EED2 /* Night_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Night_sound.mp3; sourceTree = "<group>"; };
+		49745DE620E772BD0052EED2 /* Sea_shore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sea_shore.mp3; sourceTree = "<group>"; };
+		49745DE720E772BD0052EED2 /* Morning_rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Morning_rain.mp3; sourceTree = "<group>"; };
+		49745DF020E7B75B0052EED2 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		49745DF220E7CC080052EED2 /* Sea_shore.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sea_shore.mp4; sourceTree = "<group>"; };
+		49745DF320E7CC080052EED2 /* Train_sound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Train_sound.mp4; sourceTree = "<group>"; };
+		49745DF420E7CC080052EED2 /* Mountain_peak.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mountain_peak.mp4; sourceTree = "<group>"; };
+		49745DF520E7CC080052EED2 /* Morning_rain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Morning_rain.mp4; sourceTree = "<group>"; };
+		49745DF620E7CC080052EED2 /* Night_sound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Night_sound.mp4; sourceTree = "<group>"; };
+		49745DFC20E7CF5A0052EED2 /* GoodNightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNightViewController.swift; sourceTree = "<group>"; };
+		49745DFE20E7DFDD0052EED2 /* PiPillow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PiPillow.entitlements; sourceTree = "<group>"; };
+		49745DFF20E7DFDD0052EED2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		49745E0120E7E3B60052EED2 /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		49745E0320E7EE520052EED2 /* NightStatisticCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightStatisticCollectionViewCell.swift; sourceTree = "<group>"; };
+		49745E0420E7EE520052EED2 /* NightStatisticCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NightStatisticCollectionViewCell.xib; sourceTree = "<group>"; };
+		49762EEB20A9B722005C86A1 /* PiTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiTabBarController.swift; sourceTree = "<group>"; };
+		49762EED20AB67AD005C86A1 /* SleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
+		49762EEF20AB7272005C86A1 /* AlarmViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		49762EF020AB7272005C86A1 /* AlarmViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmViewCollectionViewCell.xib; sourceTree = "<group>"; };
+		49762EF320AD76D7005C86A1 /* EasyWakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyWakeCollectionViewCell.swift; sourceTree = "<group>"; };
+		49762EF420AD76D7005C86A1 /* EasyWakeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EasyWakeCollectionViewCell.xib; sourceTree = "<group>"; };
+		49762EF820AD80C2005C86A1 /* PRGRoundRangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRGRoundRangeSlider.swift; sourceTree = "<group>"; };
+		49762EF920AD80C3005C86A1 /* PRGRoundSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRGRoundSlider.swift; sourceTree = "<group>"; };
+		49762EFA20AD80C3005C86A1 /* SliderKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderKit.swift; sourceTree = "<group>"; };
+		497AE2CC2048AE00006B89BB /* PiPillowAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPillowAPIService.swift; sourceTree = "<group>"; };
+		497AE2CE2048BBD4006B89BB /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
+		499310192027559F0086DE11 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		4993101B20275B540086DE11 /* PairingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingViewController.swift; sourceTree = "<group>"; };
+		49AD6A9320B22D9A00AE745E /* StarSoundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSoundCollectionViewCell.swift; sourceTree = "<group>"; };
+		49AD6A9420B22D9A00AE745E /* StarSoundCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarSoundCollectionViewCell.xib; sourceTree = "<group>"; };
+		49AD6A9720B244F200AE745E /* SonataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonataCollectionViewCell.swift; sourceTree = "<group>"; };
+		49AD6A9820B244F200AE745E /* SonataCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SonataCollectionViewCell.xib; sourceTree = "<group>"; };
+		49AD6A9C20B25CAF00AE745E /* SleepCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
+		49AD6A9E20B2611300AE745E /* BaseSleepCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSleepCollectionViewCell.swift; sourceTree = "<group>"; };
+		49FBD4D12048D93F005CBAFE /* ResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModels.swift; sourceTree = "<group>"; };
+		4BA274FF17B99D5701DE24FF /* Pods-PiPillowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiPillowUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiPillowUITests/Pods-PiPillowUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		862281DEDC55BA6B54383FFC /* Pods-PiPillow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiPillow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiPillow/Pods-PiPillow.debug.xcconfig"; sourceTree = "<group>"; };
+		B2F8CEA233E7A625E1013296 /* Pods-PiPillowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiPillowUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiPillowUITests/Pods-PiPillowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C73584FD72716C7D4B5A5C8E /* Pods-PiPillowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiPillowTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiPillowTests/Pods-PiPillowTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA0ACA0402CE4A74AC15A6B9 /* Pods_PiPillowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiPillowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40BBEC94577EB02A4BE5178 /* Pods-PiPillow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiPillow.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiPillow/Pods-PiPillow.release.xcconfig"; sourceTree = "<group>"; };
+		D7F09553A0702353E3A8BEB1 /* Pods_PiPillow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiPillow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4BE954B1E3FB69E71E56C75 /* Pods-PiPillowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiPillowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiPillowTests/Pods-PiPillowTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4934B84820191C6A009CEBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50CE29018CD4269A67ED103 /* Pods_PiPillow.framework in Frameworks */,
+				49745E0020E7DFDD0052EED2 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4934B85C20191C6A009CEBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F330C032CA50A4251B88D0D0 /* Pods_PiPillowTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4934B86720191C6A009CEBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EBD8DCE44ACC16A6514AA7 /* Pods_PiPillowUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4934B84220191C6A009CEBE9 = {
+			isa = PBXGroup;
+			children = (
+				4934B84D20191C6A009CEBE9 /* PiPillow */,
+				4934B86220191C6A009CEBE9 /* PiPillowTests */,
+				4934B86D20191C6A009CEBE9 /* PiPillowUITests */,
+				4934B84C20191C6A009CEBE9 /* Products */,
+				F57B3974550E344FBC5B2405 /* Pods */,
+				6DCEBEE9DECA85D43108D4C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4934B84C20191C6A009CEBE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4934B84B20191C6A009CEBE9 /* PiPillow.app */,
+				4934B85F20191C6A009CEBE9 /* PiPillowTests.xctest */,
+				4934B86A20191C6A009CEBE9 /* PiPillowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4934B84D20191C6A009CEBE9 /* PiPillow */ = {
+			isa = PBXGroup;
+			children = (
+				49745DFE20E7DFDD0052EED2 /* PiPillow.entitlements */,
+				4964DF66201E63B600D2763F /* GenDefs.swift */,
+				4934B84E20191C6A009CEBE9 /* AppDelegate.swift */,
+				4964DF6C201E6CDC00D2763F /* Extensions.swift */,
+				4934B85220191C6A009CEBE9 /* Main.storyboard */,
+				4934B85720191C6A009CEBE9 /* LaunchScreen.storyboard */,
+				4934B85520191C6A009CEBE9 /* Assets.xcassets */,
+				4934B85A20191C6A009CEBE9 /* Info.plist */,
+				49AD6A9B20B25C6600AE745E /* Helpers */,
+				49762EEA20A9B710005C86A1 /* Controllers */,
+				497AE2CB2048AD91006B89BB /* Networking */,
+				4940379A2024E45400F9B23C /* Views */,
+				4964DF65201E63A000D2763F /* ViewControllers */,
+				4934B87C201937FF009CEBE9 /* Resources */,
+				49FBD4D02048D928005CBAFE /* Models */,
+			);
+			path = PiPillow;
+			sourceTree = "<group>";
+		};
+		4934B86220191C6A009CEBE9 /* PiPillowTests */ = {
+			isa = PBXGroup;
+			children = (
+				4934B86320191C6A009CEBE9 /* PiPillowTests.swift */,
+				4934B86520191C6A009CEBE9 /* Info.plist */,
+			);
+			path = PiPillowTests;
+			sourceTree = "<group>";
+		};
+		4934B86D20191C6A009CEBE9 /* PiPillowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4934B86E20191C6A009CEBE9 /* PiPillowUITests.swift */,
+				4934B87020191C6A009CEBE9 /* Info.plist */,
+			);
+			path = PiPillowUITests;
+			sourceTree = "<group>";
+		};
+		4934B87C201937FF009CEBE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49745DED20E772C50052EED2 /* sounds */,
+				49745DEE20E772CD0052EED2 /* videos */,
+				49745DEF20E772D70052EED2 /* fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4940379A2024E45400F9B23C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49762EF720AD806A005C86A1 /* Slider */,
+				497AE2CE2048BBD4006B89BB /* CustomActivityIndicator.swift */,
+				4940379B2024E48100F9B23C /* UnderlineTextField.swift */,
+				492B6B55202A6B72008BA698 /* CustomPageControl.swift */,
+				49AD6A9E20B2611300AE745E /* BaseSleepCollectionViewCell.swift */,
+				49762EEF20AB7272005C86A1 /* AlarmViewCollectionViewCell.swift */,
+				49762EF020AB7272005C86A1 /* AlarmViewCollectionViewCell.xib */,
+				49762EF320AD76D7005C86A1 /* EasyWakeCollectionViewCell.swift */,
+				49762EF420AD76D7005C86A1 /* EasyWakeCollectionViewCell.xib */,
+				49AD6A9320B22D9A00AE745E /* StarSoundCollectionViewCell.swift */,
+				49AD6A9420B22D9A00AE745E /* StarSoundCollectionViewCell.xib */,
+				49AD6A9720B244F200AE745E /* SonataCollectionViewCell.swift */,
+				49AD6A9820B244F200AE745E /* SonataCollectionViewCell.xib */,
+				490B11C020BEBA06005065E7 /* VideoView.swift */,
+				49745E0320E7EE520052EED2 /* NightStatisticCollectionViewCell.swift */,
+				49745E0420E7EE520052EED2 /* NightStatisticCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4964DF65201E63A000D2763F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4964DF68201E63D500D2763F /* OnBoardingViewController.swift */,
+				4964DF6A201E693A00D2763F /* LogInViewController.swift */,
+				499310192027559F0086DE11 /* RegistrationViewController.swift */,
+				4993101B20275B540086DE11 /* PairingViewController.swift */,
+				495E213F20812310001B85BD /* UserInfoViewController.swift */,
+				49762EED20AB67AD005C86A1 /* SleepViewController.swift */,
+				490B11BE20BEB8B6005065E7 /* StarSoundViewController.swift */,
+				49745DFC20E7CF5A0052EED2 /* GoodNightViewController.swift */,
+				49745E0120E7E3B60052EED2 /* StatisticViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		49745DED20E772C50052EED2 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				49745DE720E772BD0052EED2 /* Morning_rain.mp3 */,
+				49745DE420E772BD0052EED2 /* Mountain_peak.mp3 */,
+				49745DE520E772BD0052EED2 /* Night_sound.mp3 */,
+				49745DE620E772BD0052EED2 /* Sea_shore.mp3 */,
+				49745DE320E772BD0052EED2 /* Train_sounds.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		49745DEE20E772CD0052EED2 /* videos */ = {
+			isa = PBXGroup;
+			children = (
+				49745DF520E7CC080052EED2 /* Morning_rain.mp4 */,
+				49745DF420E7CC080052EED2 /* Mountain_peak.mp4 */,
+				49745DF620E7CC080052EED2 /* Night_sound.mp4 */,
+				49745DF220E7CC080052EED2 /* Sea_shore.mp4 */,
+				49745DF320E7CC080052EED2 /* Train_sound.mp4 */,
+			);
+			path = videos;
+			sourceTree = "<group>";
+		};
+		49745DEF20E772D70052EED2 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4934B88720193C10009CEBE9 /* Roboto-Bold.ttf */,
+				4934B88520193C10009CEBE9 /* Roboto-Light.ttf */,
+				4934B88620193C10009CEBE9 /* Roboto-Regular.ttf */,
+				4934B87E20193815009CEBE9 /* OpenSans-Italic.ttf */,
+				4934B87F20193815009CEBE9 /* OpenSans-Light.ttf */,
+				4934B87D20193814009CEBE9 /* OpenSans-Regular.ttf */,
+				4934B88020193815009CEBE9 /* OpenSans-Semibold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		49762EEA20A9B710005C86A1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49762EEB20A9B722005C86A1 /* PiTabBarController.swift */,
+				49745DF020E7B75B0052EED2 /* AudioController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49762EF720AD806A005C86A1 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				49762EF820AD80C2005C86A1 /* PRGRoundRangeSlider.swift */,
+				49762EF920AD80C3005C86A1 /* PRGRoundSlider.swift */,
+				49762EFA20AD80C3005C86A1 /* SliderKit.swift */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		497AE2CB2048AD91006B89BB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				497AE2CC2048AE00006B89BB /* PiPillowAPIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		49AD6A9B20B25C6600AE745E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				49AD6A9C20B25CAF00AE745E /* SleepCollectionViewCellDelegate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		49FBD4D02048D928005CBAFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49FBD4D12048D93F005CBAFE /* ResponseModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DCEBEE9DECA85D43108D4C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49745DFF20E7DFDD0052EED2 /* AudioToolbox.framework */,
+				D7F09553A0702353E3A8BEB1 /* Pods_PiPillow.framework */,
+				146AD9324FC2FDADC72A5788 /* Pods_PiPillowTests.framework */,
+				CA0ACA0402CE4A74AC15A6B9 /* Pods_PiPillowUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F57B3974550E344FBC5B2405 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				862281DEDC55BA6B54383FFC /* Pods-PiPillow.debug.xcconfig */,
+				D40BBEC94577EB02A4BE5178 /* Pods-PiPillow.release.xcconfig */,
+				E4BE954B1E3FB69E71E56C75 /* Pods-PiPillowTests.debug.xcconfig */,
+				C73584FD72716C7D4B5A5C8E /* Pods-PiPillowTests.release.xcconfig */,
+				4BA274FF17B99D5701DE24FF /* Pods-PiPillowUITests.debug.xcconfig */,
+				B2F8CEA233E7A625E1013296 /* Pods-PiPillowUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4934B84A20191C6A009CEBE9 /* PiPillow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4934B87320191C6A009CEBE9 /* Build configuration list for PBXNativeTarget "PiPillow" */;
+			buildPhases = (
+				B9F46F35D46A16ED953B90F4 /* [CP] Check Pods Manifest.lock */,
+				4934B84720191C6A009CEBE9 /* Sources */,
+				4934B84820191C6A009CEBE9 /* Frameworks */,
+				4934B84920191C6A009CEBE9 /* Resources */,
+				D6DC357A5D9BAF682A686978 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PiPillow;
+			productName = PiPillow;
+			productReference = 4934B84B20191C6A009CEBE9 /* PiPillow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4934B85E20191C6A009CEBE9 /* PiPillowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4934B87620191C6A009CEBE9 /* Build configuration list for PBXNativeTarget "PiPillowTests" */;
+			buildPhases = (
+				D56333FC662DCBA4105ACC08 /* [CP] Check Pods Manifest.lock */,
+				4934B85B20191C6A009CEBE9 /* Sources */,
+				4934B85C20191C6A009CEBE9 /* Frameworks */,
+				4934B85D20191C6A009CEBE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4934B86120191C6A009CEBE9 /* PBXTargetDependency */,
+			);
+			name = PiPillowTests;
+			productName = PiPillowTests;
+			productReference = 4934B85F20191C6A009CEBE9 /* PiPillowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4934B86920191C6A009CEBE9 /* PiPillowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4934B87920191C6A009CEBE9 /* Build configuration list for PBXNativeTarget "PiPillowUITests" */;
+			buildPhases = (
+				D1097CA5B7BDE6B52854D892 /* [CP] Check Pods Manifest.lock */,
+				4934B86620191C6A009CEBE9 /* Sources */,
+				4934B86720191C6A009CEBE9 /* Frameworks */,
+				4934B86820191C6A009CEBE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4934B86C20191C6A009CEBE9 /* PBXTargetDependency */,
+			);
+			name = PiPillowUITests;
+			productName = PiPillowUITests;
+			productReference = 4934B86A20191C6A009CEBE9 /* PiPillowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4934B84320191C6A009CEBE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "pi-company";
+				TargetAttributes = {
+					4934B84A20191C6A009CEBE9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
+					};
+					4934B85E20191C6A009CEBE9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4934B84A20191C6A009CEBE9;
+					};
+					4934B86920191C6A009CEBE9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4934B84A20191C6A009CEBE9;
+					};
+				};
+			};
+			buildConfigurationList = 4934B84620191C6A009CEBE9 /* Build configuration list for PBXProject "PiPillow" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4934B84220191C6A009CEBE9;
+			productRefGroup = 4934B84C20191C6A009CEBE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4934B84A20191C6A009CEBE9 /* PiPillow */,
+				4934B85E20191C6A009CEBE9 /* PiPillowTests */,
+				4934B86920191C6A009CEBE9 /* PiPillowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4934B84920191C6A009CEBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4934B88320193815009CEBE9 /* OpenSans-Light.ttf in Resources */,
+				49762EF220AB7272005C86A1 /* AlarmViewCollectionViewCell.xib in Resources */,
+				4934B85920191C6A009CEBE9 /* LaunchScreen.storyboard in Resources */,
+				49745DF820E7CC080052EED2 /* Train_sound.mp4 in Resources */,
+				4934B88A20193C10009CEBE9 /* Roboto-Bold.ttf in Resources */,
+				49762EF620AD76D7005C86A1 /* EasyWakeCollectionViewCell.xib in Resources */,
+				49745DEB20E772BD0052EED2 /* Sea_shore.mp3 in Resources */,
+				49745DEA20E772BD0052EED2 /* Night_sound.mp3 in Resources */,
+				49745E0620E7EE520052EED2 /* NightStatisticCollectionViewCell.xib in Resources */,
+				49745DEC20E772BD0052EED2 /* Morning_rain.mp3 in Resources */,
+				49745DF920E7CC080052EED2 /* Mountain_peak.mp4 in Resources */,
+				49745DE820E772BD0052EED2 /* Train_sounds.mp3 in Resources */,
+				4934B85620191C6A009CEBE9 /* Assets.xcassets in Resources */,
+				4934B88120193815009CEBE9 /* OpenSans-Regular.ttf in Resources */,
+				4934B88220193815009CEBE9 /* OpenSans-Italic.ttf in Resources */,
+				49745DE920E772BD0052EED2 /* Mountain_peak.mp3 in Resources */,
+				4934B88420193815009CEBE9 /* OpenSans-Semibold.ttf in Resources */,
+				49745DFB20E7CC080052EED2 /* Night_sound.mp4 in Resources */,
+				4934B88920193C10009CEBE9 /* Roboto-Regular.ttf in Resources */,
+				49AD6A9A20B244F200AE745E /* SonataCollectionViewCell.xib in Resources */,
+				4934B88820193C10009CEBE9 /* Roboto-Light.ttf in Resources */,
+				49745DF720E7CC080052EED2 /* Sea_shore.mp4 in Resources */,
+				4934B85420191C6A009CEBE9 /* Main.storyboard in Resources */,
+				49745DFA20E7CC080052EED2 /* Morning_rain.mp4 in Resources */,
+				49AD6A9620B22D9A00AE745E /* StarSoundCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4934B85D20191C6A009CEBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4934B86820191C6A009CEBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9F46F35D46A16ED953B90F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PiPillow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1097CA5B7BDE6B52854D892 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PiPillowUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56333FC662DCBA4105ACC08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PiPillowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6DC357A5D9BAF682A686978 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PiPillow/Pods-PiPillow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NHRangeSlider/NHRangeSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NHRangeSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiPillow/Pods-PiPillow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4934B84720191C6A009CEBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49745E0220E7E3B60052EED2 /* StatisticViewController.swift in Sources */,
+				497AE2CD2048AE00006B89BB /* PiPillowAPIService.swift in Sources */,
+				49762EFD20AD80C3005C86A1 /* SliderKit.swift in Sources */,
+				49762EFC20AD80C3005C86A1 /* PRGRoundSlider.swift in Sources */,
+				49762EF120AB7272005C86A1 /* AlarmViewCollectionViewCell.swift in Sources */,
+				4964DF6D201E6CDC00D2763F /* Extensions.swift in Sources */,
+				49AD6A9F20B2611300AE745E /* BaseSleepCollectionViewCell.swift in Sources */,
+				49762EF520AD76D7005C86A1 /* EasyWakeCollectionViewCell.swift in Sources */,
+				49FBD4D22048D93F005CBAFE /* ResponseModels.swift in Sources */,
+				49762EFB20AD80C3005C86A1 /* PRGRoundRangeSlider.swift in Sources */,
+				4964DF6B201E693A00D2763F /* LogInViewController.swift in Sources */,
+				49745DFD20E7CF5A0052EED2 /* GoodNightViewController.swift in Sources */,
+				49762EEC20A9B722005C86A1 /* PiTabBarController.swift in Sources */,
+				49AD6A9D20B25CAF00AE745E /* SleepCollectionViewCellDelegate.swift in Sources */,
+				490B11C120BEBA06005065E7 /* VideoView.swift in Sources */,
+				4940379C2024E48100F9B23C /* UnderlineTextField.swift in Sources */,
+				4964DF69201E63D500D2763F /* OnBoardingViewController.swift in Sources */,
+				495E214020812310001B85BD /* UserInfoViewController.swift in Sources */,
+				49745E0520E7EE520052EED2 /* NightStatisticCollectionViewCell.swift in Sources */,
+				4993101A2027559F0086DE11 /* RegistrationViewController.swift in Sources */,
+				49AD6A9920B244F200AE745E /* SonataCollectionViewCell.swift in Sources */,
+				4964DF67201E63B600D2763F /* GenDefs.swift in Sources */,
+				49745DF120E7B75B0052EED2 /* AudioController.swift in Sources */,
+				4934B84F20191C6A009CEBE9 /* AppDelegate.swift in Sources */,
+				497AE2CF2048BBD4006B89BB /* CustomActivityIndicator.swift in Sources */,
+				490B11BF20BEB8B6005065E7 /* StarSoundViewController.swift in Sources */,
+				49AD6A9520B22D9A00AE745E /* StarSoundCollectionViewCell.swift in Sources */,
+				49762EEE20AB67AD005C86A1 /* SleepViewController.swift in Sources */,
+				4993101C20275B540086DE11 /* PairingViewController.swift in Sources */,
+				492B6B56202A6B72008BA698 /* CustomPageControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4934B85B20191C6A009CEBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4934B86420191C6A009CEBE9 /* PiPillowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4934B86620191C6A009CEBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4934B86F20191C6A009CEBE9 /* PiPillowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4934B86120191C6A009CEBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4934B84A20191C6A009CEBE9 /* PiPillow */;
+			targetProxy = 4934B86020191C6A009CEBE9 /* PBXContainerItemProxy */;
+		};
+		4934B86C20191C6A009CEBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4934B84A20191C6A009CEBE9 /* PiPillow */;
+			targetProxy = 4934B86B20191C6A009CEBE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4934B85220191C6A009CEBE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4934B85320191C6A009CEBE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4934B85720191C6A009CEBE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4934B85820191C6A009CEBE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4934B87120191C6A009CEBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4934B87220191C6A009CEBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4934B87420191C6A009CEBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 862281DEDC55BA6B54383FFC /* Pods-PiPillow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PiPillow/PiPillow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK463G8GP3;
+				INFOPLIST_FILE = PiPillow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pi-company.PiPillow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4934B87520191C6A009CEBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40BBEC94577EB02A4BE5178 /* Pods-PiPillow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PiPillow/PiPillow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK463G8GP3;
+				INFOPLIST_FILE = PiPillow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pi-company.PiPillow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4934B87720191C6A009CEBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4BE954B1E3FB69E71E56C75 /* Pods-PiPillowTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK463G8GP3;
+				INFOPLIST_FILE = PiPillowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pi-company.PiPillowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiPillow.app/PiPillow";
+			};
+			name = Debug;
+		};
+		4934B87820191C6A009CEBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C73584FD72716C7D4B5A5C8E /* Pods-PiPillowTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK463G8GP3;
+				INFOPLIST_FILE = PiPillowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pi-company.PiPillowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiPillow.app/PiPillow";
+			};
+			name = Release;
+		};
+		4934B87A20191C6A009CEBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BA274FF17B99D5701DE24FF /* Pods-PiPillowUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK463G8GP3;
+				INFOPLIST_FILE = PiPillowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pi-company.PiPillowUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PiPillow;
+			};
+			name = Debug;
+		};
+		4934B87B20191C6A009CEBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F8CEA233E7A625E1013296 /* Pods-PiPillowUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK463G8GP3;
+				INFOPLIST_FILE = PiPillowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pi-company.PiPillowUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PiPillow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4934B84620191C6A009CEBE9 /* Build configuration list for PBXProject "PiPillow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4934B87120191C6A009CEBE9 /* Debug */,
+				4934B87220191C6A009CEBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4934B87320191C6A009CEBE9 /* Build configuration list for PBXNativeTarget "PiPillow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4934B87420191C6A009CEBE9 /* Debug */,
+				4934B87520191C6A009CEBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4934B87620191C6A009CEBE9 /* Build configuration list for PBXNativeTarget "PiPillowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4934B87720191C6A009CEBE9 /* Debug */,
+				4934B87820191C6A009CEBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4934B87920191C6A009CEBE9 /* Build configuration list for PBXNativeTarget "PiPillowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4934B87A20191C6A009CEBE9 /* Debug */,
+				4934B87B20191C6A009CEBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4934B84320191C6A009CEBE9 /* Project object */;
+}

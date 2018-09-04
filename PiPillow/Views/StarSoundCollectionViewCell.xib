@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StarSoundCollectionViewCell" id="gTV-IL-0wX" customClass="StarSoundCollectionViewCell" customModule="PiPillow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tw-TP-uQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKO-WM-zcN" customClass="UIImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWz-Bm-UuM">
+                                <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.34509803919999998" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarSound icon" translatesAutoresizingMaskIntoConstraints="NO" id="eKz-In-V2h">
+                                <rect key="frame" x="15" y="15" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7oS-dt-ecP"/>
+                                    <constraint firstAttribute="width" constant="60" id="ssV-YV-OLx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE7-p5-iLH">
+                                <rect key="frame" x="15" y="322" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VQV-ef-K3B">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="skipDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="pkQ-52-DFf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot9-Ju-NZx">
+                                <rect key="frame" x="151" y="322" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nRF-0k-gNk">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="nextDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ghB-RI-fvy"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTV-Og-VnI">
+                                <rect key="frame" x="15" y="95" width="252" height="207"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StarSound technology let you fall asleep, while listening to " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kpR-MU-AS9">
+                                <rect key="frame" x="90" y="39" width="177" height="36"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="StarSound" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1n-cm-Ynx">
+                                <rect key="frame" x="90" y="13" width="177" height="26"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DE7-p5-iLH" secondAttribute="bottom" constant="15" id="0rn-tb-0iX"/>
+                            <constraint firstAttribute="trailing" secondItem="DKO-WM-zcN" secondAttribute="trailing" id="1zs-q3-ZDh"/>
+                            <constraint firstItem="v1n-cm-Ynx" firstAttribute="leading" secondItem="eKz-In-V2h" secondAttribute="trailing" constant="15" id="2qg-5p-SmK"/>
+                            <constraint firstItem="NTV-Og-VnI" firstAttribute="leading" secondItem="4tw-TP-uQQ" secondAttribute="leading" constant="15" id="9Xa-7k-Re8"/>
+                            <constraint firstAttribute="bottom" secondItem="Ot9-Ju-NZx" secondAttribute="bottom" constant="15" id="Boq-nu-4pH"/>
+                            <constraint firstItem="OWz-Bm-UuM" firstAttribute="top" secondItem="4tw-TP-uQQ" secondAttribute="top" id="EwH-Kd-w9c"/>
+                            <constraint firstAttribute="trailing" secondItem="NTV-Og-VnI" secondAttribute="trailing" constant="15" id="Fds-WK-btU"/>
+                            <constraint firstItem="Ot9-Ju-NZx" firstAttribute="leading" secondItem="DE7-p5-iLH" secondAttribute="trailing" constant="20" id="GLK-v2-GcR"/>
+                            <constraint firstAttribute="bottom" secondItem="DKO-WM-zcN" secondAttribute="bottom" id="Icl-j5-Hxz"/>
+                            <constraint firstItem="DE7-p5-iLH" firstAttribute="leading" secondItem="4tw-TP-uQQ" secondAttribute="leading" constant="15" id="J2P-IB-uhN"/>
+                            <constraint firstItem="eKz-In-V2h" firstAttribute="leading" secondItem="4tw-TP-uQQ" secondAttribute="leading" constant="15" id="Nzs-8h-nTo"/>
+                            <constraint firstItem="DKO-WM-zcN" firstAttribute="top" secondItem="4tw-TP-uQQ" secondAttribute="top" id="O74-BO-D9T"/>
+                            <constraint firstItem="Ot9-Ju-NZx" firstAttribute="width" secondItem="DE7-p5-iLH" secondAttribute="width" id="OcW-HS-h8V"/>
+                            <constraint firstAttribute="trailing" secondItem="Ot9-Ju-NZx" secondAttribute="trailing" constant="15" id="PMh-hx-lLc"/>
+                            <constraint firstAttribute="trailing" secondItem="OWz-Bm-UuM" secondAttribute="trailing" id="PlU-Ph-fYN"/>
+                            <constraint firstItem="DE7-p5-iLH" firstAttribute="top" secondItem="NTV-Og-VnI" secondAttribute="bottom" constant="20" id="QfS-Zp-h7t"/>
+                            <constraint firstItem="OWz-Bm-UuM" firstAttribute="leading" secondItem="4tw-TP-uQQ" secondAttribute="leading" id="R0R-F8-lHL"/>
+                            <constraint firstItem="kpR-MU-AS9" firstAttribute="bottom" secondItem="eKz-In-V2h" secondAttribute="bottom" id="RCW-Hj-Zg6"/>
+                            <constraint firstAttribute="trailing" secondItem="v1n-cm-Ynx" secondAttribute="trailing" constant="15" id="Tfc-Xi-rCp"/>
+                            <constraint firstAttribute="trailing" secondItem="kpR-MU-AS9" secondAttribute="trailing" constant="15" id="WSH-tp-l0P"/>
+                            <constraint firstItem="eKz-In-V2h" firstAttribute="top" secondItem="4tw-TP-uQQ" secondAttribute="top" constant="15" id="WlY-wL-vWt"/>
+                            <constraint firstItem="kpR-MU-AS9" firstAttribute="leading" secondItem="eKz-In-V2h" secondAttribute="trailing" constant="15" id="bjm-h8-eus"/>
+                            <constraint firstItem="NTV-Og-VnI" firstAttribute="top" secondItem="kpR-MU-AS9" secondAttribute="bottom" constant="20" id="f2B-JS-Aac"/>
+                            <constraint firstItem="DKO-WM-zcN" firstAttribute="leading" secondItem="4tw-TP-uQQ" secondAttribute="leading" id="niH-tb-IKM"/>
+                            <constraint firstItem="v1n-cm-Ynx" firstAttribute="top" secondItem="4tw-TP-uQQ" secondAttribute="top" constant="13" id="tav-aZ-PdP"/>
+                            <constraint firstAttribute="bottom" secondItem="OWz-Bm-UuM" secondAttribute="bottom" id="wZd-ZD-EPZ"/>
+                            <constraint firstItem="kpR-MU-AS9" firstAttribute="top" secondItem="v1n-cm-Ynx" secondAttribute="bottom" id="yOc-Bm-WdD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4tw-TP-uQQ" secondAttribute="trailing" id="137-Qj-fTf"/>
+                <constraint firstAttribute="bottom" secondItem="4tw-TP-uQQ" secondAttribute="bottom" id="ExL-Bo-fLc"/>
+                <constraint firstItem="4tw-TP-uQQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oSF-Mp-tlM"/>
+                <constraint firstItem="4tw-TP-uQQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zYg-su-y28"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="containerView" destination="4tw-TP-uQQ" id="0B4-QJ-5lu"/>
+                <outlet property="coverView" destination="OWz-Bm-UuM" id="E6x-D4-jDF"/>
+                <outlet property="imageView" destination="DKO-WM-zcN" id="ENc-T1-Lv5"/>
+                <outlet property="nextButton" destination="Ot9-Ju-NZx" id="4yo-Mj-ffQ"/>
+                <outlet property="skipButton" destination="DE7-p5-iLH" id="SKD-mP-oOn"/>
+                <outlet property="soundPicker" destination="NTV-Og-VnI" id="iYn-Sy-gUr"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="StarSound icon" width="56" height="56"/>
+    </resources>
+</document>

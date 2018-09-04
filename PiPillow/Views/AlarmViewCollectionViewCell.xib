@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlarmViewCollectionViewCell" id="gTV-IL-0wX" customClass="AlarmViewCollectionViewCell" customModule="PiPillow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmG-tj-Yro">
+                        <rect key="frame" x="0.0" y="0.0" width="282" height="367"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alarm Icon" translatesAutoresizingMaskIntoConstraints="NO" id="u83-xY-SHs">
+                                <rect key="frame" x="15" y="15" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="5Cg-eS-fbY"/>
+                                    <constraint firstAttribute="height" constant="60" id="UGk-zD-kgZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Alarm" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psG-m1-fZI">
+                                <rect key="frame" x="90" y="13" width="177" height="26"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let us know, when to wake you up" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rhD-vK-JDE">
+                                <rect key="frame" x="90" y="39" width="177" height="36"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fA9-GB-MR0">
+                                <rect key="frame" x="15" y="95" width="252" height="207"/>
+                                <date key="date" timeIntervalSinceReferenceDate="548139600.38790298">
+                                    <!--2018-05-16 05:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiO-Ec-lf3">
+                                <rect key="frame" x="15" y="317" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QxZ-ar-Y5R">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Skip"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="skipDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="WrX-uI-0oC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kaf-RF-568">
+                                <rect key="frame" x="151" y="317" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NVa-Pc-akE">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="UDx-Dg-gcE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549019607843" green="0.34509803921568627" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rhD-vK-JDE" firstAttribute="top" secondItem="psG-m1-fZI" secondAttribute="bottom" id="4eo-u3-y2p"/>
+                            <constraint firstItem="Kaf-RF-568" firstAttribute="width" secondItem="EiO-Ec-lf3" secondAttribute="width" id="8eF-wb-dQo"/>
+                            <constraint firstAttribute="bottom" secondItem="EiO-Ec-lf3" secondAttribute="bottom" constant="20" id="8wr-s1-5hT"/>
+                            <constraint firstAttribute="bottom" secondItem="Kaf-RF-568" secondAttribute="bottom" constant="20" id="9Wc-Tz-DYI"/>
+                            <constraint firstItem="psG-m1-fZI" firstAttribute="top" secondItem="VmG-tj-Yro" secondAttribute="top" constant="13" id="Dky-Hs-IHi"/>
+                            <constraint firstAttribute="trailing" secondItem="psG-m1-fZI" secondAttribute="trailing" constant="15" id="EHb-lH-7qV"/>
+                            <constraint firstItem="EiO-Ec-lf3" firstAttribute="leading" secondItem="VmG-tj-Yro" secondAttribute="leading" constant="15" id="Eyk-LF-HSc"/>
+                            <constraint firstItem="u83-xY-SHs" firstAttribute="top" secondItem="VmG-tj-Yro" secondAttribute="top" constant="15" id="TiA-S8-VCj"/>
+                            <constraint firstItem="Kaf-RF-568" firstAttribute="leading" secondItem="EiO-Ec-lf3" secondAttribute="trailing" constant="20" id="UKB-Ew-61w"/>
+                            <constraint firstAttribute="trailing" secondItem="Kaf-RF-568" secondAttribute="trailing" constant="15" id="V7w-oQ-qt6"/>
+                            <constraint firstItem="rhD-vK-JDE" firstAttribute="trailing" secondItem="psG-m1-fZI" secondAttribute="trailing" id="axy-yY-n3Y"/>
+                            <constraint firstItem="rhD-vK-JDE" firstAttribute="bottom" secondItem="u83-xY-SHs" secondAttribute="bottom" id="dDw-eR-LFZ"/>
+                            <constraint firstItem="EiO-Ec-lf3" firstAttribute="top" secondItem="fA9-GB-MR0" secondAttribute="bottom" constant="15" id="gLb-T9-2Jf"/>
+                            <constraint firstItem="u83-xY-SHs" firstAttribute="leading" secondItem="VmG-tj-Yro" secondAttribute="leading" constant="15" id="iYp-N2-yzj"/>
+                            <constraint firstAttribute="trailing" secondItem="fA9-GB-MR0" secondAttribute="trailing" constant="15" id="ibp-Kf-6UA"/>
+                            <constraint firstItem="rhD-vK-JDE" firstAttribute="leading" secondItem="psG-m1-fZI" secondAttribute="leading" id="rY0-xk-t7J"/>
+                            <constraint firstItem="fA9-GB-MR0" firstAttribute="top" secondItem="u83-xY-SHs" secondAttribute="bottom" constant="20" id="unW-3P-cqg"/>
+                            <constraint firstItem="fA9-GB-MR0" firstAttribute="leading" secondItem="VmG-tj-Yro" secondAttribute="leading" constant="15" id="xvH-pK-h50"/>
+                            <constraint firstItem="psG-m1-fZI" firstAttribute="leading" secondItem="u83-xY-SHs" secondAttribute="trailing" constant="15" id="zgG-vK-Bcq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="VmG-tj-Yro" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gt5-En-XWK"/>
+                <constraint firstItem="VmG-tj-Yro" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RPS-Ya-ZBw"/>
+                <constraint firstAttribute="bottom" secondItem="VmG-tj-Yro" secondAttribute="bottom" id="jGC-Y2-b1N"/>
+                <constraint firstAttribute="trailing" secondItem="VmG-tj-Yro" secondAttribute="trailing" id="lPP-IU-xD3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="303" height="365"/>
+            <connections>
+                <outlet property="containerView" destination="VmG-tj-Yro" id="h08-xq-Fh4"/>
+                <outlet property="nextButton" destination="Kaf-RF-568" id="gpO-Sc-7hD"/>
+                <outlet property="skipButton" destination="EiO-Ec-lf3" id="fsH-1P-QkT"/>
+                <outlet property="timePicker" destination="fA9-GB-MR0" id="BZT-JU-ZCs"/>
+            </connections>
+            <point key="canvasLocation" x="151.5" y="209.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Alarm Icon" width="56" height="56"/>
+    </resources>
+</document>
